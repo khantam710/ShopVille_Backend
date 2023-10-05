@@ -21,14 +21,15 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000
 
-var corsOptions = {
-    origin:  [
-      process.env.REACT_URL1,
-      process.env.REACT_URL2,
-  ],
-    optionsSuccessStatus:200
-  }
-  app.use(cors(corsOptions));
+// var corsOptions = {
+//     origin:  [
+//       process.env.REACT_URL1,
+//       process.env.REACT_URL2,
+//   ],
+//     optionsSuccessStatus:200
+//   }
+  
+app.use(cors());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
