@@ -28,8 +28,7 @@ const port = process.env.PORT || 4000
 //   ],
 //     optionsSuccessStatus:200
 //   }
-  
-app.use(cors());
+  app.use(cors());
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
