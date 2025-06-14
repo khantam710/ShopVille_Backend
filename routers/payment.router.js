@@ -1,5 +1,5 @@
 import express from 'express'
-import { paymentVerification, razorpayKey, userPayment } from '../controllers/payment.controller'
+import { paymentVerification, razorpayKey, userPayment } from '../controllers/payment.controller.js'
 const payRouter = express.Router()
 
 payRouter.post('/payment',userPayment);
