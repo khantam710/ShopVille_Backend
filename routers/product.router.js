@@ -1,6 +1,6 @@
 import express from 'express'
-import { addProduct, updateProduct, deleteProduct, getAllProducts, getSingleProduct } from '../controllers/product.controller'
-import { verifyUser, verifyAdmin } from '../auth'
+import { addProduct, updateProduct, deleteProduct, getAllProducts, getSingleProduct } from '../controllers/product.controller.js'
+import { verifyUser, verifyAdmin } from '../auth.js'
 
 const productRouter = express.Router()
 
