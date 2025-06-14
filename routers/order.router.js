@@ -1,6 +1,6 @@
 import express from 'express'
-import { addOrder, updateOrder, deleteOrder, getAllOrders, getUserOrder,getIncome } from '../controllers/order.controller'
-import {verifyAdmin, verifyUser} from '../auth'
+import { addOrder, updateOrder, deleteOrder, getAllOrders, getUserOrder,getIncome } from '../controllers/order.controller.js'
+import {verifyAdmin, verifyUser} from '../auth.js'
 const orderRouter = express.Router()
 
 orderRouter.post('/add',verifyUser, addOrder)
