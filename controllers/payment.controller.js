@@ -1,5 +1,5 @@
 import crypto from 'crypto'
-import { instance } from '../index';
+import { instance } from '../index.js';
 import processModel from '../models/process.model.js';
 import cartModel from '../models/cart.model.js';
 import orderModel from '../models/order.model.js';
