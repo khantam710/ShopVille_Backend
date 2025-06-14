@@ -8,13 +8,13 @@ import Razorpay from "razorpay"
 
 
 // ROUTERS
-import userRouter from "./routers/user.router";
-import productRouter from "./routers/product.router";
-import orderRouter from "./routers/order.router";
-import cartRouter from "./routers/cart.router";
-import payRouter from "./routers/payment.router";
-import wishRouter from "./routers/wishlist.router";
-import categoryRouter from "./routers/category.router";
+import userRouter from "./routers/user.router.js";
+import productRouter from "./routers/product.router.js";
+import orderRouter from "./routers/order.router.js";
+import cartRouter from "./routers/cart.router.js";
+import payRouter from "./routers/payment.router.js";
+import wishRouter from "./routers/wishlist.router.js";
+import categoryRouter from "./routers/category.router.js";
 
 dotenv.config();
 
