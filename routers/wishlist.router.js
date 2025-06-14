@@ -1,4 +1,4 @@
-import { addWish, getWishByUser, deleteWish } from "../controllers/wishlist.controller";
+import { addWish, getWishByUser, deleteWish } from "../controllers/wishlist.controller.js";
 import express from 'express'
 
 const wishRouter = express.Router()
