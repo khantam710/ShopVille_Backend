@@ -106,7 +106,8 @@ export const paymentVerification = async (req, res) => {
          await cartModel.deleteMany({ userID: userID })
          await processModel.deleteMany()
 
-         res.redirect(`http://localhost:5173?reference=${razorpay_payment_id}`)
+         // res.redirect(`http://localhost:5173?reference=${razorpay_payment_id}`)
+         res.redirect(`https://vocal-macaron-fbb37c.netlify.app/payment-success?reference=${razorpay_payment_id}`);
       }
       else {
          res.status(400).json({
